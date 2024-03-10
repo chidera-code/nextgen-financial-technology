@@ -1,0 +1,22 @@
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: $color-primary;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+
+}
+
+.btn:active {
+  transform: scale(.95);
+
+}
+
+.accent-btn {
+  background-color: $color-accent;
+  border-radius: 4rem;
+}
