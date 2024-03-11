@@ -24,7 +24,7 @@
 .btn:hover::after,
 .btn:hover::before {
   border-color: $color-accent;
-  transition: width 200ms ease-in-out;
+  transition: width 300ms ease-in-out;
   width: 90%;
 }
 
@@ -41,7 +41,7 @@
   display: inline-block;
   color: $color-primary;
   cursor: pointer;
-  transition: all 200ms ease;
+  transition: all 300ms ease;
   white-space: now-wrap;
 }
 
