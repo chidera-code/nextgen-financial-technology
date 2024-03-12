@@ -17,6 +17,9 @@
 html {
   overflow: hidden;
 
+  @include respond(big-phone) {
+    overflow: auto;
+  }
 }
 
 body {

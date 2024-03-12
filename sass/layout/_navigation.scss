@@ -87,5 +87,14 @@
   .check {
 
     display: none;
+
+    @include respond (tab-port) {
+      display: block;
+
+      input {
+        display: none;
+      }
+    }
   }
+
 }

@@ -47,12 +47,8 @@
 
         @include respond (big-phone) {
           padding-left: 0;
-          padding-top: 1rem;
         }
 
-        @include respond (sm-phone) {
-          padding-bottom: .8rem;
-        }
 
 
         .stats {
@@ -63,7 +59,7 @@
           margin: 1.2rem 0 3.8rem;
 
           @include respond (big-phone) {
-            margin: .8rem 0 0;
+            margin: 2rem 0 0;
           }
 
 
@@ -104,10 +100,7 @@
         margin: 3.2rem 0 0;
       }
 
-      @include respond (sm-phone) {
-        margin: 3.2rem 0 0;
 
-      }
 
       .input {
         background-color: transparent;
@@ -141,14 +134,12 @@
     height: 100vh;
     position: absolute;
     top: 30vh;
-    z-index: -1;
-    display: block;
+    z-index: 10000000000000000000000000000000000000000000;
+    // display: block;
 
     @include respond (big-phone) {
-      height: 70vh;
-      top: 20vh;
-      object-fit: contain;
-      object-position: center;
+      height: 60vh;
+      top: 10vh;
     }
 
 
@@ -159,6 +150,8 @@
       height: 100%;
       display: block;
 
+      object-fit: cover;
+      object-position: center;
 
     }
   }
