@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
+  overflow: hidden;
+
 
   &__logo {
     display: flex;
@@ -33,6 +35,18 @@
     background-color: $grey-light;
     border-radius: 4rem;
     margin-left: 9rem;
+    transition: all 300ms ease-in-out;
+
+    @include respond (tab-port) {
+      height: 50rem;
+      width: 50rem;
+      border-radius: 50%;
+      background-image: radial-gradient(#fff, #e75f00);
+      flex-direction: column;
+      overflow: hidden;
+      transform: translatey(-100rem);
+      display: none;
+    }
 
     &--links {
       display: inline-flex;
@@ -68,5 +82,10 @@
         padding: 1.35rem 2rem;
       }
     }
+  }
+
+  .check {
+
+    display: none;
   }
 }

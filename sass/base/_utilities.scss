@@ -1,3 +1,23 @@
 .container {
   padding: 0 7vw;
+
+  @include respond (big-desktop) {
+    padding: 0 8vw;
+  }
+
+  @include respond (tab-land) {
+    padding: 0 6vw;
+  }
+
+  @include respond (tab-port) {
+    padding: 0 4vw;
+  }
+
+  @include respond (big-phone) {
+    padding: 0 3.5rem;
+  }
+
+  @include respond (big-desktop) {
+    padding: 0 3rem;
+  }
 }

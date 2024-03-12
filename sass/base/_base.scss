@@ -14,10 +14,17 @@
   box-shadow: 0 0 0 $color-accent;
 }
 
+html {
+  overflow: hidden;
+
+}
+
 body {
   box-sizing: border-box;
   background-color: $color-primary-background;
   color: $color-primary;
+  overflow: hidden;
+
 }
 
 .input:focus {
