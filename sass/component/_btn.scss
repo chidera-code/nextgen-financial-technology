@@ -1,10 +1,12 @@
-.btn {
+.btn,
+.trans-btn {
 
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0;
   text-transform: capitalize;
+  white-space: nowrap;
 
 }
 
@@ -58,4 +60,24 @@
 .accent-btn {
   background-color: $color-accent;
   border-radius: 4rem;
+}
+
+.trans-btn {
+  border: 1px solid $color-primary;
+  padding: 1rem 1.1rem;
+  border-radius: 4rem;
+}
+
+.btn-ani:link,
+.btn-ani:visited {
+  white-space: nowrap;
+
+}
+
+.btn-ani:hover {
+  transform: scale(1.1);
+}
+
+.btn-ani:active {
+  transform: scale(.9);
 }

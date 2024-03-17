@@ -28,11 +28,15 @@
     }
   }
 
+  .nav {
+    background-color: $grey-light;
+
+  }
+
   &__nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $grey-light;
     border-radius: 4rem;
     margin-left: 9rem;
     transition: all 300ms ease-in-out;
@@ -76,6 +80,7 @@
     &--action {
       display: inline-flex;
       align-items: center;
+      background-color: transparent;
 
 
       a:not(last-child) {
@@ -95,6 +100,6 @@
         display: none;
       }
     }
-  }
 
+  }
 }

@@ -15,18 +15,21 @@
 }
 
 html {
-  overflow: hidden;
+  // overflow: hidden;
 
   @include respond(big-phone) {
     overflow: auto;
   }
 }
 
+
 body {
   box-sizing: border-box;
   background-color: $color-primary-background;
   color: $color-primary;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
 
 }
 

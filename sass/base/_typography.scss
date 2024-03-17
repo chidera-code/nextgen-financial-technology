@@ -27,7 +27,7 @@ html {
 
 
 .heading-primary {
-  font-size: 6.5rem;
+  font-size: 6.4rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0px;
@@ -37,12 +37,12 @@ html {
   }
 
   @include respond (big-desktop) {
-    font-size: 7.6rem;
+    font-size: 6rem;
     line-height: 110%;
   }
 
   @include respond (tab-land) {
-    font-size: 6rem;
+    font-size: 6.4rem;
 
   }
 
@@ -52,7 +52,12 @@ html {
   }
 
   @include respond (big-phone) {
-    font-size: 6rem;
+    font-size: 7rem;
+    line-height: 120%;
+  }
+
+  @include respond (phone) {
+    font-size: 5rem;
     line-height: 120%;
   }
 
@@ -67,7 +72,7 @@ html {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0;
-  color: $color-white;
+  color: $color-white-blur;
 
   @include respond (big-desktop) {
     font-size: 2.4rem;
@@ -75,12 +80,21 @@ html {
   }
 
   @include respond (big-phone) {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 120%;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  @include respond (phone) {
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-align: unset;
+    margin-top: .6rem;
   }
 
   @include respond (sm-phone) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 120%;
   }
 
@@ -93,11 +107,11 @@ html {
     line-height: 130%;
     letter-spacing: 0px;
     display: block;
-    color: $color-white;
+    color: $color-white-blur;
 
 
     @include respond (big-phone) {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       line-height: 120%;
     }
 
@@ -108,17 +122,14 @@ html {
   }
 }
 
-.input::placeholder {
+.span {
   font-family: $font-family;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: $color-primary;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include respond (big-phone) {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 120%;
   }
 
