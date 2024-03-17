@@ -171,8 +171,8 @@
       height: 80vh;
       width: 100%;
       position: absolute;
-      top: 40vh;
-      // object-fit: contain;
+      // top: 40vh;
+      object-fit: cover;
       object-position: center;
       z-index: -1;
       // overflow-x: hidden;
@@ -205,7 +205,7 @@
 
         // transform: translatey(-112.6vh);
         @include respond (phone) {
-          height: 60vh;
+          height: 40vh;
           // width: 1110px;
 
 
@@ -217,39 +217,4 @@
   }
 
 
-  .marquee {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid $color-primary;
-    border-bottom: 1px solid $color-primary;
-    padding: 2rem 1rem;
-    position: fixed;
-    bottom: 2rem;
-
-
-    @include respond (tab-port) {
-      padding: 1rem .5rem;
-      bottom: 1.5rem;
-    }
-
-    @include respond (phone) {
-      bottom: 0rem;
-    }
-
-    .marquee-text {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-
-
-      span {
-        font-size: 2rem;
-        line-height: 130%;
-        padding: 0 6rem;
-        letter-spacing: 2px;
-      }
-    }
-  }
 }
