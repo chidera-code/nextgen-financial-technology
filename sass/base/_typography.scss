@@ -42,7 +42,7 @@ html {
   }
 
   @include respond (tab-land) {
-    font-size: 6.4rem;
+    font-size: 5rem;
 
   }
 
@@ -52,7 +52,7 @@ html {
   }
 
   @include respond (big-phone) {
-    font-size: 7rem;
+    font-size: 4rem;
     line-height: 120%;
   }
 
@@ -80,16 +80,13 @@ html {
   }
 
   @include respond (big-phone) {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 120%;
-    text-align: center;
-    margin-top: 1.5rem;
   }
 
   @include respond (phone) {
     font-size: 1.8rem;
     line-height: 120%;
-    text-align: unset;
     margin-top: .6rem;
   }
 
@@ -111,12 +108,12 @@ html {
 
 
     @include respond (big-phone) {
-      font-size: 2.2rem;
+      font-size: 2rem;
       line-height: 120%;
     }
 
     @include respond (sm-phone) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 120%;
     }
   }
@@ -129,7 +126,7 @@ html {
 
 
   @include respond (big-phone) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 120%;
   }
 

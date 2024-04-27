@@ -1,85 +1,68 @@
 .header {
+  // height: 130vh;\
 
 
   &__main {
     padding-top: 8.8rem;
     background-color: $grey-dark;
-
+    background-blend-mode: darken;
     margin-top: 2rem;
     border-radius: 4rem 4rem 0 0;
     position: relative;
     z-index: -1;
 
-    @include respond (big-phone) {
-      padding-top: 2.4rem;
-      border-radius: 3.2rem 3.2rem 0 0;
 
-    }
-
-    @include respond (sm-phone) {
+    @include respond (phone) {
       padding-top: 2rem;
     }
 
+
     .text-box {
       display: flex;
-      z-index: 999999;
+      z-index: 9;
+
+
+      .box {
+        flex: 1;
+      }
 
       @include respond (big-phone) {
         flex-direction: column;
+        // padding: 6vw;
+        align-items: start;
+        justify-content: start;
+        width: 80%;
+        gap: 1rem !important;
 
-        .stats {
-
-          align-self: flex-end;
-          order: 2;
-          margin-top: 3rem;
-        }
-
-        h1 {
-          text-align: center;
-        }
-
-        a {
-          justify-self: flex-start;
-          align-self: center;
-
-          order: 1;
-        }
       }
 
       @include respond (phone) {
         flex-direction: column;
+        // padding: 6vw;
+        align-items: start;
+        justify-content: start;
+        width: 80%;
+        gap: 3rem;
 
-        .stats {
-
-          align-self: flex-start;
-          order: 1;
-          margin-top: 3.2rem;
-        }
-
-        h1 {
-          text-align: start;
-        }
-
-        a {
-          justify-self: center;
-          align-self: flex-start;
-
-          order: 2;
-        }
       }
+
+
 
       .cta-box {
         display: flex;
         flex-direction: column;
         padding-left: 9.5rem;
+        flex: 1;
 
         @include respond (tab-port) {
           padding-left: 3.6rem;
         }
 
-        @include respond (big-phone) {
+        @include respond (phone) {
           padding-left: 0;
+
         }
+
 
 
 
@@ -90,9 +73,7 @@
           gap: .8rem;
           margin: 1.2rem 0 3.8rem;
 
-          @include respond (big-phone) {
-            margin: 2rem 0 0;
-          }
+
 
 
         }
@@ -104,6 +85,7 @@
           width: 4rem;
           height: 4rem;
           align-self: flex-start;
+          color: $grey-dark;
 
           img {
             width: 100%;
@@ -129,9 +111,7 @@
       cursor: pointer;
 
 
-      @include respond (big-phone) {
-        margin: 3.2rem 0 0;
-      }
+
 
 
 
@@ -157,39 +137,45 @@
         transform: translate(-50%, -50%);
       }
 
-      @include respond (phone) {
-
-        padding: .3rem;
-      }
 
 
 
-      position: relative;
+
     }
 
 
     &--hero-img {
-      width: 100%;
-      // position: absolute;
       object-fit: cover;
       object-position: center;
-      z-index: -3333;
-      margin-top: -15rem;
+      z-index: -1;
+      margin-top: -20rem;
       position: relative;
 
-      @include respond (phone) {
-        height: 60vh;
-        width: 1110px;
-        top: 20vh;
-        object-fit: cover;
 
+
+      @include respond (phone) {
+        overflow-x: hidden !important;
+        height: 90vh;
+        margin-top: -15rem;
+        width: 100vw;
       }
+
+      @include respond (sm-phone) {
+        overflow-x: hidden !important;
+        height: 80vh;
+        margin-top: -20rem;
+        width: 100vw;
+      }
+
+
 
 
 
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: bottom;
         position: relative;
       }
 
@@ -201,15 +187,9 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        top: -10px;
-
-        // transform: translatey(-112.6vh);
-        @include respond (phone) {
-          height: 40vh;
-          // width: 1110px;
+        top: 0px;
 
 
-        }
       }
 
     }

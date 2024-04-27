@@ -1,7 +1,6 @@
 .footer {
 
 
-
   .marquee {
 
     display: flex;
@@ -23,9 +22,6 @@
       margin-bottom: 1.5rem;
     }
 
-    @include respond (phone) {
-      margin-top: 1rem;
-    }
 
     .marquee-text {
       display: inline-flex;
